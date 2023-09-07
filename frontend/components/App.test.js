@@ -31,14 +31,16 @@ test('renders moved', () => {
   expect(moved).toBeInTheDocument();
 })
 
-test('renders email', () => {
+test ('renders email', () => {
   render(<AppClass />)
-  const email = screen.getByPlaceholderText(/type email/i)
-  expect(email).toBeInTheDocument();
+  const email = screen.getByPlaceholderText(/type email/i);
+  expect(email).toBeInTheDocument()
 })
 
-test('Typing in email', () => {
+test ('Typing in email', () => {
   render(<AppClass />)
-  const email = screen.getByPlaceholderText(/type email/i)
-  fireEvent.click(email); 
+  const email = screen.getByPlaceholderText(/type email/i);
+  fireEvent.click(email)
 })
+
+

@@ -11,8 +11,8 @@ export default function AppFunctional(props) {
     steps: 0,
     grid: ['', '', '', '', 'B', '', '', '', '',],
     message: '',
-    className: "square",
-    email: " "
+    className: 'square',
+    email: ''
   })
 
   //function for changing state with left button is clicked
@@ -300,7 +300,7 @@ export default function AppFunctional(props) {
       x: 2,
       y: 2,
       steps: 0,
-      email: '',
+      email: ''
     })
   }  
 
@@ -330,7 +330,7 @@ export default function AppFunctional(props) {
       setState({
         ...state,
         message: res.data.message,
-        email: '',
+        email: ''
       })
     })
     .catch(err => {
